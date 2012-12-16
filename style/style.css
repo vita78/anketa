@@ -1,0 +1,205 @@
+@font-face {
+  font-family: lobster;
+  src:url(lobster.ttf),
+	local("lobster"), 
+	url(lobster.eot);/*Файл шрифта для <IE8 */
+}
+
+html {
+    height: 100%;
+   /* background:#EEE9E9 url("pattern.png") ;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+header, section, footer, aside, nav, article {
+    display: block; /* Блочный элемент */
+}
+body {
+    font: normal 12px/18px Arial,Helvetica,sans-serif;
+    color:#555;
+    background:#EEE9E9 url("pattern.png") ;
+}
+
+h1, h2 {
+    font: normal 250%  lobster,Arial,Helvetica,sans-serif;
+    color: #444;
+    margin: 0 0 15px 0;
+    padding: 10px 15px;
+  }
+  
+h2{ 
+    font: normal 170% lobster,Arial,Helvetica, sans-serif;
+    color: #F14E23;  
+    margin: 0;
+    padding: 0 15px 8px 15px;
+  /*filter: Shadow(Color=#666666, Direction=45, Strength=4);
+  text-shadow: 1px 1px 2px black, 0 0 1em blue; /* Параметры тени /
+    color: red; /* Белый цвет текста /
+    font-size: 2em; /* Размер надписи */
+}
+h4{
+    font-weight: 200;
+} 
+ 
+a, a:hover {
+    outline: none;
+    color: #e6901c;
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none
+}
+
+nav {
+    position: fixed;
+    width: 67%;
+    min-width: 500px;
+    margin: 0 15%;
+    z-index: 1000;
+}
+nav ul{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    list-style: none;
+    /*margin: 0 15%;*/
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#ebebeb, Direction=120, Strength=5); /* Тень для IE8*/
+}
+nav ul:before, nav ul:after {
+    position: absolute;
+    width: 280px;/*40%;*/
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+nav ul:after {
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
+
+nav ul li{
+    display: inline;
+    text-align: center;
+}
+
+nav ul li a {
+    line-height: 40px;
+    font:16px lobster,Arial,sans-serif ;
+    color:#F14E23;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 20px;
+    border-bottom: 1px dotted #F14E23;
+}
+
+nav ul li a:hover{
+    color: #000;
+}
+
+nav ul li a:active {
+    border-bottom: none;
+}
+ol{
+    padding-left: 30px
+}
+ol li{
+    list-style-position: inside-block;
+    font: normal 13px Arial,Helvetica, sans-serif ;
+    margin: 5px 60px 10px 20px;
+    
+}
+ol li h3 {
+    font: bold 13px Arial,Helvetica, sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+.email{
+    position: absolute;
+    top:20px;
+    right: 0px;
+    
+}
+#content {
+    width: 70%;
+    margin:0px auto ;
+    padding-top:70px;
+    height:100%;
+        /*border:1px solid red;*/
+}	 
+#content p {
+    margin-bottom: 20px;
+    text-align:justify;
+}
+
+#c1{
+    width: 100%;
+    min-width: 500px;
+    display: block;
+    margin:40px 0px;
+    padding:0 0 30px 0px;
+    border1: 1px double  #CACACA;
+    /*-webkit-box-shadow: 0px 0px 5px 2px #ebebeb;
+    -moz-box-shadow: 0px 0px 5px 2px #ebebeb;
+    box-shadow: 0px 0px 5px 2px #ebebeb;*/
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 20px rgba(0, 0, 0, 0.1);
+    /*filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(Color=#ebebeb, Direction=120, Strength=5); /* Тень для IE8*/
+    background:url("paperclip.png") no-repeat 5 -15px 53px;
+}
+footer {
+    float: right;
+    margin-top: 40px;
+    padding:10px;
+    text-align:center ;
+}
+.logo1{
+    float:right;
+    position: relative;
+    margin: 25px;
+}
+.paperclip {
+    float: left;
+    position: relative; 
+    z-index: 0;
+    vertical-align: middle; 
+    margin: -28px 0 -60px -25px;
+}
+  
+.tag{
+   float: right;
+   display: block;
+   position: relative; 
+   z-index: 0;
+   vertical-align: middle; 
+   margin: 100px 0 100px 150x;
+   border: 1px solid red;
+}
+  
