@@ -6,9 +6,7 @@
     <meta charset= "utf-8">
     <title>Сайт-резюме</title>
     <link rel="stylesheet" href="style/style.css">
-    
-     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
-
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
      <!--[if lt IE 9]>
      <script>
        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
@@ -16,55 +14,39 @@
        document.createElement(e[i]);
       }
      </script>
-     <![endif]-->
-     
-     <!--[if lt IE 9]>      
+    <![endif]-->
+    <!--[if lt IE 9]>      
      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Скрипт для скроллинга по элементам страницы -->
+    <!-- Скрипт для скроллинга по подразделам страницы -->
     <script>
-$(document).ready(function(){
-	
+    $(document).ready(function(){
 	$('nav ul li a').click(function(){
-	
-		var el = $(this).attr('href');
-		var elWrapped = $(el);
-		
-		scrollToDiv(elWrapped,40);
-		
-		return false;
-	
+	    var el = $(this).attr('href');
+	    var elWrapped = $(el);
+	    scrollToDiv(elWrapped,40);
+	    return false;
 	});
 	
 	function scrollToDiv(element,navheight){
-	
-		
-	
-		var offset = element.offset();
-		var offsetTop = offset.top;
-		var totalScroll = offsetTop-navheight;
-		
-		$('body,html').animate({
-				scrollTop: totalScroll
-		}, 500);
-	
+	    var offset = element.offset();
+	    var offsetTop = offset.top;
+	    var totalScroll = offsetTop-navheight;
+	    $('body,html').animate({
+	    scrollTop: totalScroll
+	    }, 500);
 	}
-	
-	
-	
 });
 </script>
 </head>
 <body>
-   <!--img class="logo" src="style/logo.png" alt="лого"/-->
     <nav>
         <ul>
             <li><a href="#p1">Общие вопросы</a></li>
             <li><a href="#p2">Опыт разработки</a></li>
             
         </ul>
-        <div class="email"><a href="mailto:ya.fvv78@yandex.ua"><img src="style/mail.png" alt="Написать письмо"/></a></div>
+        <div class="email"><a href="mailto:ya.fvv78@yandex.ua"><img src="style/mail1.png" alt="Написать письмо"/></a></div>
     </nav>
     
     <div id="content" >
@@ -116,29 +98,29 @@ $(document).ready(function(){
                         Создание статического сайта-визитки для ТЭИ по заданию руководства, затем заинтересовалась веб-разработкой сайтов более  глубоко. Стала самостоятельно изучать HTML4/CSS2/ JS и PHP4.
                     </li>
                     <li>  
-                        Разработка  пользовательской и административной частей  интернет –портала для фирмы Консоль ЛТД, его модернизация и сопровождение. Разработка модуля интернет-магазина.
-                        (верстка шаблонов главной и внутренних страниц HTML4/CSS2, JS, разработка собственной CMS на PHP4 под базу данных Oracle).
+                        Разработка  пользовательской и административной частей сайта для фирмы Консоль ЛТД, его модернизация и сопровождение. Разработка модуля интернет-магазина.
+                        (верстка шаблонов главной и внутренних страниц HTML4/CSS2, JS, разработка собственной CMS на PHP4 под базу данных Oracle, модуль интернет-магазина с использованием Flash и ActionScript).
                     </li>  
                     <li>  
                         Студия интернет-решений Webgraica. 
-                        Верстка макетов  и шаблонов сайтов (HTML/CSS/JS). Разработка сайтов с использованием CMS : ModX,  HostCMS  и др. Разработка отдельных модулей на PHP4. Поддержка , сопровождение и модернизация различных   сайтов  разработанных студией.
+                        Верстка макетов  и шаблонов сайтов (HTML/CSS/JS). Разработка сайтов с использованием CMS : MODx,  HostCMS. Разработка отдельных модулей на PHP4. Поддержка, сопровождение и модернизация различных   сайтов  разработанных студией.
                         Вот некоторые сайты разработкой которых я занималась:
                         <a href="http://stoppassive.com.ua/">http://stoppassive.com.ua/</a>, <a href="http://www.vde.com.ua/">http://www.vde.com.ua/</a>, <a href="http://nash-krim.com.ua/">http://nash-krim.com.ua/</a>,
-			<a href="www.editorial.in.ua/">www.editorial.in.ua/</a>, <a href="">http://www.vip-crimea.com/</a>, <a href="">http://www.nikolaevka-skif.com/</a> , <a href="http://outdoor.biz.ua/">http://outdoor.biz.ua/</a>,
-			<a href="http://www.web-dream.com.ua/">http://www.web-dream.com.ua/</a> ,<a href="http://fleurdecor.com.ua">http://fleurdecor.com.ua</a>.
+			<a href="http://www.editorial.in.ua/">www.editorial.in.ua/</a>, <a href="http://www.vip-crimea.com/">http://www.vip-crimea.com/</a>, <a href="http://www.nikolaevka-skif.com/">http://www.nikolaevka-skif.com/</a>,
+			<a href="http://outdoor.biz.ua/">http://outdoor.biz.ua/</a>,
+			<a href="http://www.web-dream.com.ua/">http://www.web-dream.com.ua/</a>, <a href="http://fleurdecor.com.ua">http://fleurdecor.com.ua</a>.
                     </li>  
                     </ul>
 
                 </li>
                 <li><h3>Какие языки программирования, фреймворки и технологии вы использовали? Сложились ли у вас личные предпочтения?</h3>
-                    <p>Языки: HTML4,PHP4-5,Delphi5-6, JavaScript, CSS2.</p>
-                    <p>JavaScript фреймворки:  jQuery, mootols.</p>  
-                    Больше нравится заниматься веб-разработками. 
-
+                    Языки: HTML4, PHP4-5, Delphi5-6, JavaScript, CSS2.
+                    JavaScript фреймворки: jQuery, mootols.  
+                    Больше нравится заниматься веб-разработкой. 
                 </li>
                 <li><h3>С какими редакторами и средами разработки вы знакомы? Чем обычно пользуетесь?</h3>
                     <p>Использовала много различных сред разработки и  редакторов: Aptana Studio,  Komodo Edit, Notepad++, Eclipse, Dreamweaver.
-                       Но наиболее удобным и мощным была  Aptana, который использовала для большинства проектов  и более легкий редактор Кomodo Edit.
+                       Но наиболее удобной и мощной была  Aptana, которую использовала для большинства проектов  и более легкий редактор Кomodo Edit.
                     </p>
                 </li>
                 <li><h3>С какими ОС приходилось сталкиваться? Для каких целей вы их применяли?</h3>
@@ -152,7 +134,7 @@ $(document).ready(function(){
                     нет
                 </li>
                 <li><h3>Какие полезные для фронтенд-разработчика ресурсы вы используете и готовы посоветовать?</h3>
-                   jsFiddle.net
+                   Различные тематические сайты: htmlbook.ru, habrahabr.ru, htmlcss.ru. Веб-сервисы:jsFiddle.net, colllor.com, cleancss.com, css3gen.com. Книги: Б. Лоусон, Р. Шарп - Изучаем HTML 5 (Библиотека специалиста) 
                 </li>
                 <li><h3>Где вы работали раньше? Что именно делали? Есть ли у вас опыт работы в команде?</h3>
                      <ul>
@@ -163,7 +145,7 @@ $(document).ready(function(){
                             Разработка, модернизация и поддержка веб-сайта фирмы. Разработка Windows-приложений.
                         </li>
                         <li>Студия  интернет-решений WebGrafica (2009-2010г.)
-                            Кроссбраузерная и валидная верстака макетов и шаблонов сайта, разработка сайтов с использованием различных СMS : MODx, HostCMS и др.
+                            Кроссбраузерная и валидная верстака макетов и шаблонов сайта, разработка сайтов с использованием различных СMS: MODx, HostCMS.
                             Есть небольшой опыт работы в команде 2 человка для разработки нескольких веб-сайтов.
 
                         </li>
@@ -172,9 +154,7 @@ $(document).ready(function(){
            </ol>
         </section>   
         <footer>
-            <p> &copy; 2012 | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> </p>
-    
-            
+            <p> &copy; 2012 <!--| <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a--> </p>
         </footer>
       </div>
     </div>   <!--end div content-->
