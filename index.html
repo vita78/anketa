@@ -24,7 +24,7 @@
 	$('nav ul li a').click(function(){
 	    var el = $(this).attr('href');
 	    var elWrapped = $(el);
-	    scrollToDiv(elWrapped,40);
+	    scrollToDiv(elWrapped,75);
 	    return false;
 	});
 	
@@ -37,6 +37,26 @@
 	    }, 500);
 	}
 });
+ /*Скрипт прокручивания страницы наверх  */
+ (function($){
+
+$(function(){
+	var e = $(".scrollTop");
+	var	speed = 500;
+	
+	e.click(function(){
+		$("html:not(:animated)" +( !$.browser.opera ? ",body:not(:animated)" : "")).animate({ scrollTop: 0}, 500 );
+		return false; //важно!
+	});
+	//появление
+	function show_scrollTop(){
+		( $(window).scrollTop()>300 ) ? e.fadeIn(600) : e.hide();
+	}
+	$(window).scroll( function(){show_scrollTop()} ); show_scrollTop();
+	
+});
+
+})(jQuery)
 </script>
 </head>
 <body>
@@ -46,16 +66,15 @@
             <li><a href="#p2">Опыт разработки</a></li>
             
         </ul>
-        <div class="email"><a href="mailto:ya.fvv78@yandex.ua"><img src="style/mail1.png" alt="Написать письмо"/></a></div>
+        <div class="email"><a href="mailto:ya.fvv78@yandex.ua" alt="Написать письмо"><img src="style/mail1.png" alt="Написать письмо"/></a></div>
     </nav>
     
     <div id="content" >
-        
         <div id="c1" >
         <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
         <img class="logo1" src="style/logo.png" alt="лого"/>
         <header><h1>Резюме</h1></header>   
-        <section id="p1">
+        <p id="p1">
             <h2>Общие вопросы</h2>
                 <ol>
                     <li><h3>Фамилия, имя, отчество</h3>
@@ -88,8 +107,8 @@
                     </li>
                 </ol>
               
-        </section>
-        <section id="p2">
+        </p>
+        <p id="p2">
            <h2>Опыт разработки</h2>
            <ol>
                 <li><h3>Расскажите нам о вашем опыте разработки. Ничего не упускайте: это может быть как серьезный интерфейс, так и просто домашняя страничка.</h3>
@@ -152,8 +171,9 @@
                     </ul>    
                 </li>
            </ol>
-        </section>   
+        </p>   
         <footer>
+	    <a class='scrollTop' href='#' style='display:none;'></a>
             <p> &copy; 2012 <!--| <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a--> </p>
         </footer>
       </div>
